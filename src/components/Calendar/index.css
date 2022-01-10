@@ -1,0 +1,64 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.week-days {
+    display: flex;
+    height: 20px;
+    width: 100%;
+}
+.week-days div {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.row {
+    /* height: 40px; */
+    width: 100%;
+    display: flex;
+    /* border-bottom: 1px solid #ddd; */
+}
+.row:last-child {
+    /* border-bottom: 0; */
+}
+.cell {
+    width: 40px;
+    height: 100px;
+    flex: 1 1 auto;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;    
+}
+.cell.disabled-date {
+    cursor: default;
+}
+.disabled-date {
+    color: #ddd;
+}
+.event-title {
+    background-color: rgb(121, 134, 203);
+    padding: 0 4px;
+    height: 18px;    
+    border: 1px solid transparent;
+    line-height: 16px;
+    overflow: hidden;
+    width: 100px;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    display: flex;
+    outline: none;
+    text-overflow: ellipsis;
+}
+.event-title.disabled-date {
+    cursor: default;
+    pointer-events: none;
+}

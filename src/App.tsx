@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import { Layout, Row, Col, Calendar } from 'antd';
+import CustomCalendar from "./components/Calendar";
 import './App.css';
 
-function App() {
+const { Content, Header } = Layout;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Layout className='app-layout'>      
+    <Header className='app-header'>
+      <h2>January 2022</h2></Header>
+      <Content>
+        <Row className='container'>
+          <Col span={6}>
+            <Calendar fullscreen={false} />
+          </Col>
+          <Col span={18}>
+            <CustomCalendar />
+          </Col>
+        </Row>      
+      </Content>      
+    </Layout>
+  )
 }
 
 export default App;
