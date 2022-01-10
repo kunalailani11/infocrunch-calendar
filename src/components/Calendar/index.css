@@ -8,26 +8,26 @@
     display: flex;
     height: 20px;
     width: 100%;
+    border-right: 1px solid #ddd;
 }
 .week-days div {
     flex: 1 1 auto;
+    width: 40px;
     text-align: center;
+    border-left: 1px solid #ddd;
 }
 
-.row {
-    /* height: 40px; */
+.row {    
     width: 100%;
-    display: flex;
-    /* border-bottom: 1px solid #ddd; */
-}
-.row:last-child {
-    /* border-bottom: 0; */
+    display: flex;    
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
 }
 .cell {
     width: 40px;
     height: 100px;
-    flex: 1 1 auto;
-    border: 1px solid #ddd;
+    flex: 1 1 auto;    
+    border-left: 1px solid #ddd;
     display: flex;
     flex-direction: column;
     justify-content: center;

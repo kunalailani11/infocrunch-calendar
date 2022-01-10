@@ -6,9 +6,10 @@ const { Content, Header } = Layout;
 
 const App = () => {
   return (
-    <Layout className='app-layout'>      
-    <Header className='app-header'>
-      <h2>January 2022</h2></Header>
+    <Layout className='app-layout'>
+      <Header className='app-header'>
+        <h2>January 2022</h2>
+      </Header>
       <Content>
         <Row className='container'>
           <Col span={6}>
@@ -17,8 +18,8 @@ const App = () => {
           <Col span={18}>
             <CustomCalendar />
           </Col>
-        </Row>      
-      </Content>      
+        </Row>
+      </Content>
     </Layout>
   )
 }

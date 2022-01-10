@@ -36,9 +36,7 @@ const CustomCalendar = () => {
                 id: item.id,
                 day: item.day,
                 event: formData.eventTitle
-            };   
-            console.log(formData.eventTitle, index, dateIndex);
-            console.log(updatedCurrentMonthData);           
+            };                   
             setEventModalVisibility(false);
             setCurrentMonthData(updatedCurrentMonthData);
        }
@@ -86,23 +84,7 @@ const CustomCalendar = () => {
             setEventModalVisibility={setEventModalVisibility}
             setEventTitle={setEventTitle}
 
-            />
-            {/* <table className="table">
-                {calendarData.map((week, row) => (
-                    <tr className="row">
-                        {week.map((item, index) => (
-                            <td className="cell">
-                                <div>
-                                    {item.day}
-                                </div>
-                                {item.event && <div>
-                                    {item.event}
-                                </div>}
-                            </td>
-                        ))}
-                    </tr>
-                ))}
-            </table> */}
+            />            
         </>
     )
 }

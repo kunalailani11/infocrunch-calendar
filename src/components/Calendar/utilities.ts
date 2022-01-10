@@ -6,7 +6,7 @@ export type CalendarDataType = {
     isFutureDate?: boolean;
 }
 
-const oldEvents = ['Meeting with xyz', 'discussion regarding project with abc'];
+const oldEvents = ['Meeting with xyz', 'discussion regarding project with abc', 'task submission'];
 
 const decStartDate = 26;
 const janStartDate = 1;
